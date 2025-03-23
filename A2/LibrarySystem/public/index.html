@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System | CodeWithMeBK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Library System : </h2>
+
+    <!-- Add an Author -->
+    <h2>Add an Author</h2>
+    <input id="authorName" placeholder="Author Name">
+    <button onclick="addAuthor()">Add Author</button>
+
+    <!-- Add a book -->
+    <h2>Add a Book</h2>
+    <input id="bookTitle" placeholder="Book Title">
+    <input id="authorId" placeholder="Author ID">
+    <button onclick="addBook()">Add Book</button>
+
+    <!-- Display Authors -->
+    <h2>All Authors</h2>
+    <button onclick="fetchAuthors()">Load Authors</button>
+    <ul id="authorList"></ul>
+
+    <!-- Display Books -->
+    <h2>All Books</h2>
+    <button onclick="fetchBooks()">Load Books</button>
+    <ul id="bookList"></ul>
+
+    <!-- Fetch Book by ID -->
+    <h2>Find a Book by ID</h2>
+    <input id="bookId" placeholder="Enter Book ID">
+    <button onclick="fetchBookById()">Find Book</button>
+    <p id="bookDetails"></p>
+
+    <!-- Fetch Books by Author -->
+    <h2>Find Books by Author ID</h2>
+    <input id="authorIdSearch" placeholder="Enter Author ID">
+    <button onclick="fetchBooksByAuthor()">Find Books</button>
+    <ul id="authorBooksList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
